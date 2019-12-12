@@ -8,4 +8,32 @@ pip install --trusted-host pypi.org --trusted-host pypi.python.org --trusted-hos
 3 - Como administrador
 pip install --trusted-host pypi.org --trusted-host pypi.python.org --trusted-host files.pythonhosted.org --upgrade pip
 
-4 - 
+4 - django-admin startproject mysite
+
+5 - iniciando o servidor 
+$ python manage.py runserver
+outros meios:
+python manage.py runserver 8080 -- inicia na porta 8080
+python manage.py runserver 0:8000
+Obs: 0 é um atalho para 0.0.0.0
+
+NOTA:
+Projects vs. apps
+
+What’s the difference between a project and an app? An app is a Web application that does something – e.g., a Weblog system, a database of public records or a small poll app. A project is a collection of configuration and apps for a particular website. A project can contain multiple apps. An app can be in multiple projects.
+
+6 - Criando uma app 
+python manage.py startapp polls
+
+NOTA:
+This is the simplest view possible in Django. To call the view, we need to map it to a URL - and for this we need a URLconf.
+
+To create a URLconf in the polls directory, create a file called urls.py
+
+polls/urls.py
+
+The next step is to point the root URLconf at the polls.urls module. 
+In mysite/urls.py, add an import for django.urls.include and insert an include() in the urlpatterns list, so you have:
+
+mysite/urls.py
+
