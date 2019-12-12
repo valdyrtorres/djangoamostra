@@ -1,0 +1,11 @@
+1 - virtualenv trydjango110 -p python
+Você criou de novo o ambiente
+.\Scripts\activate
+
+2 - 
+pip install --trusted-host pypi.org --trusted-host pypi.python.org --trusted-host files.pythonhosted.org django=3.0
+
+3 - Como administrador
+pip install --trusted-host pypi.org --trusted-host pypi.python.org --trusted-host files.pythonhosted.org --upgrade pip
+
+4 - 
