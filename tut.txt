@@ -95,6 +95,10 @@ First we’ll need to create a user who can login to the admin site. Run the fol
 
 $ python manage.py createsuperuser
 
+TUTORIAL 2 FINALIZADO
+
+
+
 
 
 
